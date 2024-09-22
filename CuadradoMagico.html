@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            text-decoration: underline;
+            color: #fafbf6;
+        }
+        body {
+            text-align: center;
+            background-color: #0f0f1b;
+            color: #fafbf6;
+        }
+        .outset {
+            outline-color: #565a75;
+            outline-style: outset;
+        }
+        input {
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto; 
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        input[type=number] {
+            width: 50px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+    <title>Cuadrado Magico</title>
+    <script src="./jscuadradomob.js"></script>
+</head>
+<body onload="Generar()" class='outset'>
+    <a href="Index.html"><button>Regresar al menú</button></a><br>
+    <h1>Cuadrado Mágico</h1>
+    <p>
+        Los cuadrados mágicos son un conjunto de números enteros diferentes colocados en las casillas de un cuadrado, y se caracterizan porque la suma de sus filas, columnas y diagonales principales es siempre la misma. El valor de la suma es denominado Constante mágica del Cuadrado.
+    </p>
+    <p>
+        Seleccione el tamaño del cuadrado:
+        <select id="lados" onchange="Generar()">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </p>
+    <input type="button" value="Generar" onclick="Generar()">
+    <input type="button" value="Calcular" onclick="Calcular()">
+    <input type="button" value="Ejemplo de Cuadrado" onclick="EjemploCuadrado()">
+    <input type="button" value="Ejemplo de Cuadrado mágico" onclick="EjemploMagico()">
+    <table border="0.5" id="cuadrado"></table>
+    <h1 id="verificar" style="color: crimson;">No es cuadrado magico</h1>
+</body>
+</html>

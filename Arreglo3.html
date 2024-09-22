@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-decoration: underline;
+            color:"#ff8e80";
+        }
+        body {
+            text-align:center;
+            
+        }
+        body {outline-color: #565a75;}
+        body.outset{outline-style: outset;}
+        input {text-align: center;} 
+        .center { margin-left:auto;
+                  margin-right:auto;}
+    </style>
+    <title>Arreglo 3</title>
+    <script src="./obfuscated.js"></script>
+</head>
+<body onload="Aleatorio()" class = "outset" bgcolor = "#0f0f1b" style="color:#fafbf6">
+    <a href="Index.html"><button>Regresar al menú</button></a><br>
+    <h1>Arreglos 3:</h1>
+    <p>
+        Capture un arreglo de 10 elementos de tipo entero, imprima el arreglo de forma vertical y horizontal, imprima el arreglo de forma ascendente y descendente, encuentre el elemento menor, el mayor, la suma, el promedio o media, la mediana y la moda.
+    </p>
+    <p>
+        Nota: El input donde se capturan los números y el botón se deben deshabilitar al capturar el último elemento del arreglo. El botón "Generar" empieza o inicia deshabilitado. Valide que el elemento del arreglo sea entero.
+    </p>
+    
+    <form action="javascript: Capturar()">
+        <p style="display: inline;" id="contador">Elemento [0]:</p>
+        <input type="number" id="elementoInput" required>
+        <input type="submit" value="Capturar" id="capturarBoton">
+        <input type="button" value="Reiniciar" onclick="Reiniciar()">
+        <br>
+        <input type="button" value="Generar resultados" id="generarBoton" onclick="Calcular()" disabled>
+        <p id="resultados"></p>
+        
+        <table id="tablaHorizontal" border="2" style="border-collapse:collapse;" class = "center">
+            <tr id="renglonIndice"></tr>
+            <tr id="renglonDato"></tr>
+        </table>
+        
+        <table id="tablaHorizontal2" border="2" style="border-collapse:collapse;"class = "center">
+            <tr id="renglonIndice2"></tr>
+            <tr id="renglonDato2"></tr>
+        </table>
+        
+        <table id="tablaHorizontal3" border="2" style="border-collapse:collapse;"class = "center">
+            <tr id="renglonIndice3"></tr>
+            <tr id="renglonDato3"></tr>
+        </table>
+        
+        <table id="tablaVertical" border="2" style="border-collapse:collapse; display: inline-block;"class = "center"></table>
+        <table id="tablaVertical2" border="2" style="border-collapse:collapse; display: inline-block;"class = "center"></table>
+        <table id="tablaVertical3" border="2" style="border-collapse:collapse; display: inline-block;"class = "center"></table>
+    </form>
+</body>
+</html>
