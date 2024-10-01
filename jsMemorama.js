@@ -3,7 +3,7 @@ var imagentemporal;
 var esperando = false;
 var contador = 0x0;
 function CambiarImagen(_0x389a6c, _0x31d17e) {
-  _0x389a6c.src = "./img/" + tarjetas[_0x31d17e];
+  _0x389a6c.src = "./" + tarjetas[_0x31d17e];
   if (!esperando) {
     imagen_temporal = _0x389a6c;
   } else if (imagen_temporal.src == _0x389a6c.src) {
@@ -18,8 +18,8 @@ function CambiarImagen(_0x389a6c, _0x31d17e) {
   esperando = !esperando;
 }
 function RegresarImg(_0x2e6b0c, _0x5a8b22) {
-  _0x2e6b0c.src = "./img/9.jpeg";
-  _0x5a8b22.src = "./img/9.jpeg";
+  _0x2e6b0c.src = "./9.jpeg";
+  _0x5a8b22.src = "./9.jpeg";
   _0x2e6b0c.setAttribute("onclick", "CambiarImagen(this," + _0x2e6b0c.id + ')');
   _0x5a8b22.setAttribute('onclick', "CambiarImagen(this," + _0x5a8b22.id + ')');
 }
@@ -45,7 +45,7 @@ function Revolver() {
 }
 function Fondo() {
   var _0x2d6327 = Math.floor(Math.random() * 0x3) + 0x1;
-  document.getElementById("tabla").style = "background-image: url(\"./MemoramaImg/fondo.jpeg" + _0x2d6327 + ".jpeg\");";
+  document.getElementById("tabla").style = "background-image: url(\"./fondo.jpeg" + _0x2d6327 + ".jpeg\");";
 }
 function Reiniciar() {
   location.reload();
